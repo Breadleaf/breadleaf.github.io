@@ -48,7 +48,7 @@ class SideNav extends HTMLElement {
 
 		<div id="sideNav" class="sidenav">
 			<i id="close" onclick="closeNav()" class="fa-regular fa-circle-xmark"></i>
-			<a href="home.html">Home</a>
+			<a href="index.html">Home</a>
 			<a href="about.html">About</a>
 			<a href="contact.html">Contact</a>
 			<a href="blog.html">Blog</a>
