@@ -32,6 +32,7 @@ class SideNav extends HTMLElement {
 
 		.sidenav a {
 			padding: 16px 8px 8px 16px;
+			text-decoration: none;
 			display: block;
 		}
 

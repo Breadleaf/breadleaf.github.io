@@ -1,7 +1,7 @@
 /* Elements */
 body {
-	background-color: #272838;
 	font-family: "Fira Code", monospace;
+	background-color: #272838;
 	font-size: 50px;
 	color: #7D6B91;
 }
@@ -14,13 +14,11 @@ p {
 
 a {
 	transition: all 0.3s ease;
-	text-decoration: none;
 	font-weight: 500;
 	color: #7D6B91;
 }
 
 a:hover {
-	text-decoration: none;
 	font-weight: 500;
 	color: #989FCE;
 }

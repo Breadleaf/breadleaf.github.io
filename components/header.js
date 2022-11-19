@@ -34,11 +34,26 @@ class Header extends HTMLElement {
 		#social_button:hover {
 			color: #989FCE;
 		}
+
+		#name {
+			transition: all 0.3s ease;
+			text-decoration: none;
+			font-weight: 700;
+			font-size: 26px;
+			color: #7D6B91;
+		}
+
+		#name:hover {
+			text-decoration: none;
+			font-weight: 700;
+			font-size: 26px;
+			color: #989FCE;
+		}
 		</style>
 
 		<div id="header">
 			<div id="header_left">
-				<p class="big_text">Bradley Hutchings</p>
+				<a href="index.html" id="name" class="big_text">Bradley Hutchings</a>
 			</div>
 			<div id="header_right">
 				<div id="icon_pannel">

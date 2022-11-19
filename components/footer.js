@@ -6,7 +6,7 @@ class Footer extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<hr>
-		<p>Hello World!</p>
+		<p class="small_text">It is my goal to learn about as much as I can while I can!</p>
 		`;
 	}
 }
