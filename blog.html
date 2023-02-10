@@ -27,9 +27,108 @@
 		<div class="strip">
 			<header-component></header-component>
 
-			<iframe height="195vh" width="100%" src="posts/nov19-2022.html"></iframe>
+			<div id="posts"></div>
 
 			<footer-component></footer-component>
 		</div>
 	</body>
+<script>
+
+const postsList = [
+	"2023-2-10",
+	"2022-11-19"
+];
+
+var posts = document.getElementById("posts");
+
+for (var i = 0; i < postsList.length; i++) {
+	var postContainer = document.createElement("div");
+	postContainer.id = postsList[i];
+	postContainer.className = "postContainer";
+
+	var postHeader = document.createElement("div");
+	postHeader.classList.add("postHeader");
+
+	var postTitle = document.createElement("div");
+	postTitle.innerText = postsList[i];
+	postTitle.classList.add("medium_text")
+	postTitle.classList.add("postTitle");
+	postTitle.classList.add("postHeader-child");
+
+	var postToolTip = document.createElement("div");
+	postToolTip.innerText = "Click to expand post";
+	postToolTip.classList.add("small_text");
+	postToolTip.classList.add("postToolTip");
+	postToolTip.classList.add("postHeader-child");
+
+	postHeader.appendChild(postTitle);
+	postHeader.appendChild(postToolTip);
+
+	postContainer.appendChild(postHeader);
+
+	postContainer.onclick = function() {
+		if (document.getElementById("post:" + this.id) != null) {
+			removePost(this.id);
+			return;
+		}
+
+		loadPost(this.id);
+	}
+
+	posts.appendChild(postContainer);
+}
+
+function loadPost(postName) {
+	var iframe = document.createElement("iframe");
+	iframe.src = "posts/" + postName + ".html";
+	iframe.width = "100%";
+	iframe.height = "195vh";
+	iframe.id = "post:" + postName;
+	document.getElementById(postName).appendChild(iframe);
+}
+
+function removePost(postName) {
+	document.getElementById(postName).lastChild.remove();
+}
+
+</script>
+
+<style>
+
+.postHeader {
+	display: flex;
+}
+
+.postHeader-child {
+}
+
+.postHeader:first-child {
+	/* margin-right: 20px; */
+}
+
+.postToolTip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 10px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.postTitle:hover + .postToolTip {
+	opacity: 1;
+}
+
+.postTitle {
+	margin: 10px;
+	width: fit-content;
+}
+
+.postContainer {
+	padding: 20px;
+}
+
+</style>
+
 </html>
