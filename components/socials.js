@@ -51,7 +51,7 @@ class Socials extends HTMLElement {
 		gitlab.style.color = "#5e5c64";
 		gitlab.addEventListener("click", () => {
 			window.open("https://gitlab.com/breadleaf");
-		}
+		});
 
 		left_wrapper.appendChild(gitlab);
 
