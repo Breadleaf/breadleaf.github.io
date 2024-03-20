@@ -36,6 +36,9 @@ class Socials extends HTMLElement {
 			"p-2",
 		);
 		github.style.color = "#5e5c64";
+		github.addEventListener("click", () => {
+			window.open("https://github.com/breadleaf");
+		});
 
 		left_wrapper.appendChild(github);
 
@@ -46,6 +49,9 @@ class Socials extends HTMLElement {
 			"p-2",
 		);
 		gitlab.style.color = "#5e5c64";
+		gitlab.addEventListener("click", () => {
+			window.open("https://gitlab.com/breadleaf");
+		}
 
 		left_wrapper.appendChild(gitlab);
 
@@ -56,6 +62,11 @@ class Socials extends HTMLElement {
 			"p-2",
 		);
 		linkedin.style.color = "#5e5c64";
+		linkedin.addEventListener("click", () => {
+			window.open(
+				"https://www.linkedin.com/in/bradley-k-hutchings/",
+			);
+		});
 
 		left_wrapper.appendChild(linkedin);
 
@@ -66,6 +77,9 @@ class Socials extends HTMLElement {
 			"p-2",
 		);
 		twitter.style.color = "#5e5c64";
+		twitter.addEventListener("click", () => {
+			window.open("https://twitter.com/breadleaf_");
+		});
 
 		right_wrapper.appendChild(twitter);
 
@@ -76,6 +90,9 @@ class Socials extends HTMLElement {
 			"p-2",
 		);
 		instagram.style.color = "#5e5c64";
+		instagram.addEventListener("click", () => {
+			window.open("https://www.instagram.com/salt_breadleaf/");
+		});
 
 		right_wrapper.appendChild(instagram);
 
@@ -86,6 +103,9 @@ class Socials extends HTMLElement {
 			"p-2",
 		);
 		rss.style.color = "#5e5c64";
+		rss.addEventListener("click", () => {
+			window.open("/rss.xml");
+		});
 
 		right_wrapper.appendChild(rss);
 
