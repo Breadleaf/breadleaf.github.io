@@ -1,35 +1,15 @@
 <!DOCTYPE html>
-
-<!-- https://coolors.co/272838-5d536b-7d6b91-989fce-347fc4 -->
-
-<html>
+<html lang="en">
 	<head>
-		<title>Bradley Hutchings</title>
-
-		<!-- Meta Data -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- External Fonts and Icons -->
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/50746c9988.js" crossorigin="anonymous"></script>
-
-		<!-- Css Files -->
-		<link href="styles/theme.css" type="text/css" rel="stylesheet">
-
-		<!-- Custom Components -->
-		<script src="components/header.js" type="text/javascript" defer></script>
-		<script src="components/footer.js" type="text/javascript" defer></script>
-		<script src="components/sidenav.js" type="text/javascript" defer></script>
+		<title>Markdown Viewer</title>
+		<script src="components/metadata.js"></script>
 	</head>
 	<body>
-		<sidenav-component></sidenav-component>
-		<div class="strip">
-			<header-component></header-component>
-
-			<p class="medium_text">This page is under construction!</p>
-
-			<footer-component></footer-component>
+		<metadata-component></metadata-component>
+		<div id="root">
+			<div id="content">
+			</div>
 		</div>
+		<script src="app.js"></script>
 	</body>
 </html>
