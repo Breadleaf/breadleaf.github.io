@@ -105,6 +105,7 @@ class Socials extends HTMLElement {
 		rss.style.color = "#5e5c64";
 		rss.addEventListener("click", () => {
 			window.open("/rss.xml");
+
 		});
 
 		right_wrapper.appendChild(rss);
