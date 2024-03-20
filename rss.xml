@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>My RSS feed</title>
+<link>https://breadleaf.github.io</link>
+<description>My first RSS feed</description>
+<language>en-us</language>
+
+<item>
+<title>First item</title>
+<link>https://breadleaf.github.io</link>
+<description>My first item</description>
+</item>
+
+</channel>
+</rss>
