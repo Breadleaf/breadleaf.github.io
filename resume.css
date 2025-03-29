@@ -1,0 +1,120 @@
+accordion,
+.accordion {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.accordion {
+  background-color: var(--color-background-secondary);
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-header {
+  margin: 0;
+}
+
+.accordion-button {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  text-align: left;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+.accordion-button.collapsed {
+  color: var(--color-text-primary);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-background);
+  color: var(--color-accent);
+}
+
+.accordion-button:hover {
+  background-color: var(--color-background);
+}
+
+.accordion-button:focus,
+.accordion-button:active,
+.accordion-button.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background: none !important;
+  font-family: "Material Symbols Outlined";
+  content: "keyboard_double_arrow_down";
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+  color: inherit;
+  transform-origin: 50% 50%;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.accordion-collapse {
+  border-top: 1px solid var(--color-border);
+}
+
+.accordion-body {
+  padding: 1rem;
+  color: var(--color-text-primary);
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: var(--color-background);
+}
+
+#github-resume {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#github-resume a {
+  transition: transform 0.1s ease, color 0.1s ease;
+  display: inline-block;
+}
+
+#github-resume a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+  color: var(--color-accent-hover);
+}
+
+.key-value p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.experience,
+.project {
+  background-color: var(--color-background-secondary);
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1rem;
+}

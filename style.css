@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  padding: 0 1rem;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+a {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+strong {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 900;
+  font-size: 20px;
+}

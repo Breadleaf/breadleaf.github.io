@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>My Blog</title>
+		<link>https://breadleaf.github.io</link>
+		<description>Latest posts from my blog</description>
+		<lastBuildDate>Thu, 27 Mar 2025 15:59:00 GMT</lastBuildDate>
+	<item>
+		<title>Credit where credit is due.</title>
+		<link>https://breadleaf.github.io/posts/html/27-03-2025_00-48-10.html</link>
+		<description>For my first post on my new page, it only felt right to credit some of my inspiration.</description>
+		<pubDate>Thu, 27 Mar 2025 06:48:10 GMT</pubDate>
+		<guid>https://breadleaf.github.io/posts/html/27-03-2025_00-48-10.html</guid>
+	</item>
+	</channel>
+</rss>

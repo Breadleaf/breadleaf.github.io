@@ -1,0 +1,12 @@
+resume-section > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  white-space: nowrap;
+  color: var(--color-accent);
+}
+
+resume-section > hr {
+  color: var(--color-accent);
+  border-width: 8px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: #f0f0f0;
+        margin: 0;
+      }
+
+      .card {
+        width: 300px;
+        height: 400px;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.1s ease-out;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Hover Me</h1>
+      <p>3D Pivot Effect</p>
+    </div>
+    <script>
+      const card = document.querySelector(".card");
+
+      card.addEventListener("mousemove", (e) => {
+        const { width, height, left, top } = card.getBoundingClientRect();
+        const x = e.clientX - (left + width / 2);
+        const y = e.clientY - (top + height / 2);
+
+        const rotateX = ((-1 * y) / (height / 2)) * 10; // max ±10°
+        const rotateY = (x / (width / 2)) * 10;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform =
+          "perspective(1000px) rotateX(0deg) rotateY(0deg)";
+      });
+    </script>
+  </body>
+</html>

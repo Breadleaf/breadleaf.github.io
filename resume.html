@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Bradley Hutchings - Resume</title>
+
+    <script src="sharedHeader.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down"
+    />
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <br />
+    <div id="github-resume" class="text-center">
+      <a
+        href="https://github.com/Breadleaf/resume/blob/main/resume.pdf"
+        class="open-new"
+      >
+        Rendered LaTeX Resume (Condensed)
+      </a>
+    </div>
+    <div class="container my-4">
+      <resume-section
+        title="Education"
+        icon="fa-solid fa-graduation-cap fa-2xl"
+      ></resume-section>
+      <p><strong> Colorado School of Mines - Golden, Colorado </strong></p>
+      <div class="key-value">
+        <p>
+          <span>B.S. Computer Science</span>
+          <span>August 2021 - May 2025</span>
+        </p>
+      </div>
+      <br />
+      <resume-section
+        title="Skills"
+        icon="fa-solid fa-circle-info fa-2xl"
+      ></resume-section>
+      <p>
+        <strong> Backend: </strong>
+        <span>
+          C/C++, Golang, Python3, Lua, PostgresSQL, Redis, (Learning) OAuthV2
+        </span>
+      </p>
+      <p>
+        <strong> Frontend: </strong>
+        <span>
+          JavaScript, Typescript, HTMX, Bootstrap, HTML, CSS, (Learning) React
+        </span>
+      </p>
+      <p>
+        <strong> Developer Tools: </strong>
+        <span>
+          Linux, Docker + Docker Compose, GNU-MAKEFILE, PlatformIO, Nginx, Npm,
+          Vite, Android Studio + Jetpack UI
+        </span>
+      </p>
+      <p>
+        <strong> Project Integration: </strong>
+        <span> Test Driven Development, Agile & Scrum</span>
+      </p>
+      <br />
+      <resume-section
+        title="Work Experience"
+        icon="fa-solid fa-briefcase fa-2xl"
+      ></resume-section>
+      <div class="experience">
+        <p><strong> Research Internship </strong></p>
+        <div class="key-value">
+          <p>
+            <span> C.S.M & National Science Foundation </span>
+            <span> June 2024 - September 2024 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            Automated data aggregation, filtering, and processing with
+            <strong>Python</strong> and <strong>Pandas</strong>.
+          </li>
+          <li>
+            Trained <strong>SciKitLearn</strong> models to identify vulnerable
+            network data.
+          </li>
+          <li>
+            Collaborated closely with graduate student Su Wang and Professor
+            Dong Chen, providing daily progress reports and weekly updates.
+          </li>
+        </ul>
+      </div>
+      <br />
+
+      <div class="experience">
+        <p><strong> Product Development Internship </strong></p>
+        <div class="key-value">
+          <p>
+            <span> Analytical Data Systems </span>
+            <span> June 2023 - August 2023 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            Lead and organized a team of 3 other interns using industry standard
+            practices such as <strong>Agile</strong> and <strong>Scrum</strong>.
+          </li>
+          <li>
+            Developed a toolchain in <strong>Python</strong> from scratch to
+            have LLMs introspect and reprompt themselves for more normalized
+            results based on user-defined qualities.
+          </li>
+          <li>
+            Implemented several user interfaces to interact with the service
+            from Discord and a custom web client written in
+            <strong>Python</strong>, <strong>Flask</strong>,
+            <strong>JavaScript</strong>, and <strong>JQuery</strong>.
+          </li>
+        </ul>
+      </div>
+      <br />
+
+      <div class="experience">
+        <p><strong> Data Infastructure Freelance </strong></p>
+        <div class="key-value">
+          <p>
+            <span> Computer Engineering Group </span>
+            <span> March 2020 - June 2020 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            Built a Windows app to manage customer device data before repair.
+            Written in <strong>C#</strong>, <strong>.NET</strong>, and
+            <strong>PostgresSQL</strong>.
+          </li>
+          <li>
+            Designed and implemented a tagging system to manage customer
+            information, including contact details, payment status, repair
+            duration, and other relevant data points. Written in
+            <strong>Python</strong> and <strong>TKinter</strong>.
+          </li>
+        </ul>
+      </div>
+      <br />
+
+      <resume-section
+        title="Projects"
+        icon="fa-solid fa-code fa-2xl"
+      ></resume-section>
+
+      <div class="text-center">
+        <strong>Featured Projects:</strong>
+      </div>
+      <br />
+
+      <div class="project">
+        <p><strong> Plummet Language </strong></p>
+        <div class="key-value">
+          <p>
+            <span> ACM & Personal Project </span>
+            <span> January 2023 - December 2024 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            An <a href="https://www.acm.org/" class="open-new">ACM</a> project I
+            led with the goal of implementing a cross-platform language.
+          </li>
+          <li>
+            Created technical specification documents for the language and
+            package manager.
+          </li>
+          <li>
+            Implemented toolchain to manage packages, as well as lex and parse
+            programs using <strong>Golang</strong>.
+          </li>
+        </ul>
+        <a
+          href="https://github.com/ColoradoSchoolOfMines/plummet-language"
+          class="open-new"
+        >
+          GitHub Repository - Plummet Language
+        </a>
+      </div>
+      <br />
+
+      <div class="project">
+        <p><strong> Keyboard OS </strong></p>
+        <div class="key-value">
+          <p>
+            <span> Personal Project </span>
+            <span> January 2023 - December 2024 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            Prototyped hardware and firmware with <strong>PlatformIO</strong>.
+          </li>
+          <li>
+            Created a DSL that abstracted the
+            <strong>Adafruit GFX</strong> library to control an on-devide screen
+            in <strong>C++</strong>.
+          </li>
+        </ul>
+        <p>
+          Unfortunately this project never made it onto the web and is on an old
+          SSD somewhere.
+        </p>
+      </div>
+      <br />
+
+      <div class="project">
+        <p><strong> Leaf Lang </strong></p>
+        <div class="key-value">
+          <p>
+            <span> Personal Project </span>
+            <span> August 2022 - January 2023 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            An interpreted or transpiled procedural dynamically-typed
+            stack-based programming language written in <strong>Python</strong>.
+          </li>
+          <li>
+            Wrote a compiler in Leaf Lang to compile a miniature version of Leaf
+            Lang.
+          </li>
+        </ul>
+        <a href="https://gitlab.com/Breadleaf/leaf-lang" class="open-new">
+          GitLab Repository - Leaf Lang
+        </a>
+      </div>
+      <br />
+
+      <div class="project">
+        <p><strong> Robotics Software Engineer </strong></p>
+        <div class="key-value">
+          <p>
+            <span> FRC (First Robotics Competition) #7667 </span>
+            <span> November 2018 - June 2019 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+            Competed in the 2019 Houston World Championship placing rank 29.
+          </li>
+          <li>
+            Designed and fabricated a game piece manipulation mechanism, wrote
+            control code using <strong>C++</strong> and <strong>WPILIB</strong>.
+          </li>
+        </ul>
+
+        <a
+          href="https://www.thebluealliance.com/team/7667/2019"
+          class="open-new"
+          >The Blue Alliance - Footage and Scorecards</a
+        >
+      </div>
+      <br />
+
+      <div class="text-center">
+        <strong>Archived Projects:</strong>
+      </div>
+      <br />
+
+      <accordion-container>
+        <div title="Test Project 1">
+          <p>Hello World</p>
+        </div>
+
+        <div title="Test Project 2">
+          <p>Hello World</p>
+        </div>
+
+        <div title="Test Project 3">
+          <p>Hello World</p>
+        </div>
+      </accordion-container>
+      <br />
+    </div>
+    <footer-links></footer-links>
+    <br />
+    <script type="module" src="navBar.js"></script>
+    <script type="module" src="themeListener.js"></script>
+    <script type="module" src="Accordion.js"></script>
+    <script type="module" src="footer.js"></script>
+    <script type="module" src="aOpenNew.js"></script>
+    <script type="module" src="ResumeSection.js"></script>
+  </body>
+</html>

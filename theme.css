@@ -1,0 +1,21 @@
+/* Light Theme (Default) */
+:root {
+  --color-background: #f2e8dc;
+  --color-background-secondary: #fff6ed;
+  --color-text-primary: #3e2c1c;
+  --color-text-secondary: #7a614c;
+  --color-accent: #ff80ab;
+  --color-accent-hover: #ff4081;
+  --color-border: #d3bba0;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --color-background: #2b2420;
+  --color-background-secondary: #3a302d;
+  --color-text-primary: #f5e9df;
+  --color-text-secondary: #baa593;
+  --color-accent: #ff80ab;
+  --color-accent-hover: #ff4081;
+  --color-border: #554d48;
+}
