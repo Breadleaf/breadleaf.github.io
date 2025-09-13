@@ -19,3 +19,9 @@ pip install -r requirements.txt
 
 - `./posts/html` are the final files, any changes made will be overwritten on
 subsequent compiles
+
+## Development
+
+```
+python3 -m http.server <port>
+```
