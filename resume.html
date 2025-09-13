@@ -19,10 +19,18 @@
     <br />
     <div id="github-resume" class="text-center">
       <a
-        href="https://github.com/Breadleaf/resume/blob/main/resume.pdf"
+	href="https://github.com/Breadleaf/resume/blob/main/bradley_hutchings_swe_resume.pdf"
         class="open-new"
       >
-        Rendered LaTeX Resume (Condensed)
+        Rendered Typst Resume for Software Engineering
+      </a>
+    </div>
+    <div id="github-resume" class="text-center">
+      <a
+	href="https://github.com/Breadleaf/resume/blob/main/bradley_hutchings_emb_resume.pdf"
+        class="open-new"
+      >
+        Rendered Typst Resume for Firmware Engineering
       </a>
     </div>
     <div class="container my-4">
@@ -31,6 +39,13 @@
         icon="fa-solid fa-graduation-cap fa-2xl"
       ></resume-section>
       <p><strong> Colorado School of Mines - Golden, Colorado </strong></p>
+      <p> Electrical Engineering Classes: </p>
+      <ul>
+	      <li>Circuits</li>
+	      <li>Digital Logic</li>
+	      <li>PCB Design</li>
+	      <li>Elements of Computing (Comparable to Embedded Systems)</li>
+      </ul>
       <div class="key-value">
         <p>
           <span>B.S. Computer Science</span>
@@ -38,6 +53,36 @@
         </p>
       </div>
       <br />
+
+      <accordion-container>
+	<div title="Red Rocks Community College - Lakewood, Colorado">
+      <p> Language Classes: </p>
+      <ul>
+	      <li>Spanish</li>
+      </ul>
+      <div class="key-value">
+        <p>
+          <span>Dual Enrolled</span>
+          <span>January 2025 - May 2025</span>
+        </p>
+      </div>
+	</div>
+
+	<div title="Napa Valley College - Napa, California ">
+      <p> Certificates: (See <a href="https://www.linkedin.com/in/bradley-k-hutchings/" class="open-new">LinkedIn</a>) </p>
+      <ul>
+	      <li>Autodesk Fusion360</li>
+      </ul>
+      <div class="key-value">
+        <p>
+          <span>Dual Enrolled</span>
+          <span>2017 - 2021</span>
+        </p>
+      </div>
+	</div>
+      </accordion-container>
+      <br />
+
       <resume-section
         title="Skills"
         icon="fa-solid fa-circle-info fa-2xl"
@@ -45,31 +90,65 @@
       <p>
         <strong> Backend: </strong>
         <span>
-          C/C++, Golang, Python3, Lua, PostgresSQL, Redis, (Learning) OAuthV2
+          C/C++, Golang, Python3, Lua, PostgresSQL
         </span>
       </p>
       <p>
         <strong> Frontend: </strong>
         <span>
-          JavaScript, Typescript, HTMX, Bootstrap, HTML, CSS, (Learning) React
+          JavaScript, Typescript, HTMX, Bootstrap, HTML, CSS
         </span>
       </p>
       <p>
-        <strong> Developer Tools: </strong>
+        <strong> Software Tools: </strong>
         <span>
           Linux, Docker + Docker Compose, GNU-MAKEFILE, PlatformIO, Nginx, Npm,
-          Vite, Android Studio + Jetpack UI
+          Vite, Android Studio + Jetpack UI, Git, SSH, FTP, S3 Buckets
+        </span>
+      </p>
+      <p>
+        <strong> Hardware Tools: </strong>
+        <span>
+		Oscilloscope, Arduino, THT & SMD Soldering, I2C, SPI
         </span>
       </p>
       <p>
         <strong> Project Integration: </strong>
         <span> Test Driven Development, Agile & Scrum</span>
       </p>
+      <p>
+        <strong> Programs: </strong>
+        <span>
+		Fusion360, EagleCAD, FreeCAD, KiCAD, Quartus Prime
+        </span>
+      </p>
       <br />
       <resume-section
         title="Work Experience"
         icon="fa-solid fa-briefcase fa-2xl"
       ></resume-section>
+      <div class="experience">
+        <p><strong> Contract Work: Tech Lead </strong></p>
+        <div class="key-value">
+          <p>
+            <span> SwingLens LLC </span>
+            <span> May 2025 - June 2025 </span>
+          </p>
+        </div>
+        <ul>
+          <li>
+	    Managed a team of 7 intern engineers whilst working closely with other advisors.
+          </li>
+          <li>
+	    Advised on <strong>Python</strong>, <strong>Flask</strong>, <strong>Hardware</strong> configuration, and industry programming practices.
+          </li>
+          <li>
+		  Developed and open-sourced a <strong>Python</strong> tool for importing <strong>Jupyter Notebooks</strong>.
+          </li>
+        </ul>
+      </div>
+      <br />
+
       <div class="experience">
         <p><strong> Research Internship </strong></p>
         <div class="key-value">
@@ -158,82 +237,144 @@
       <br />
 
       <div class="project">
-        <p><strong> Plummet Language </strong></p>
+        <p><strong> Nova Mill Open Hardware PCB Mill </strong></p>
         <div class="key-value">
           <p>
-            <span> ACM & Personal Project </span>
-            <span> January 2023 - December 2024 </span>
+            <span> Personal Project </span>
+            <span> July 2025 - Present </span>
+          </p>
+        </div>
+	<p>
+		NovaMill is a work in progress Open Hardware desktop PCB Mill
+		with the goal of making rapid PCB prototyping easier as faster.
+	</p>
+	<ul>
+		<li>
+			Real-time motor and sensor control with
+			<strong>Pi Pico 2 W</strong> running <strong>Marlin</strong>.
+		</li>
+		<li>
+			<strong>Pi Zero 2 W</strong> running custom
+			<strong>Linux</strong> distribution for on-device
+			<strong>machine learning</strong> corrections.
+		</li>
+	</ul>
+	<a href="https://github.com/Breadleaf/novamill" class="open-new">
+		GitHub Repository - NovaMill
+	</a>
+      </div>
+      <br />
+
+      <div class="project">
+        <p><strong> Muserve Application </strong></p>
+        <div class="key-value">
+          <p>
+            <span> Personal Project </span>
+            <span> July 2025 - Present </span>
           </p>
         </div>
         <ul>
           <li>
-            An <a href="https://www.acm.org/" class="open-new">ACM</a> project I
-            led with the goal of implementing a cross-platform language.
+	    Self hosted music streaming service with future plans of developing compatible hardware.
           </li>
-          <li>
-            Created technical specification documents for the language and
-            package manager.
-          </li>
-          <li>
-            Implemented toolchain to manage packages, as well as lex and parse
-            programs using <strong>Golang</strong>.
-          </li>
+	  <li>
+		  Hand rolled, multiprocess safe, authentication using <strong>python</strong>, <strong>JWTs</strong>, and <strong>sockets</strong>.
+	  </li>
+	  <li>
+		  Safe data ingest with <strong>mimetype detection</strong>, conversion to <strong>Vorbis ogg</strong>, and storage in <strong>postgres</strong>.
+	  </li>
+	  <li>
+		  Web UI written in modular <strong>JavaScript</strong>, using <strong>Flask</strong> templates on static routes.
+	  </li>
+	  <li>
+		  Seperation of internal and external network via <strong>Nginx Proxying</strong>.
+	  </li>
         </ul>
+
         <a
-          href="https://github.com/ColoradoSchoolOfMines/plummet-language"
+          href="https://github.com/breadleaf/muserve"
           class="open-new"
+          >GitHub Repository - Muserve</a
         >
-          GitHub Repository - Plummet Language
-        </a>
       </div>
       <br />
 
       <div class="project">
-        <p><strong> Keyboard OS </strong></p>
+        <p><strong> BreadLeaf-8 (BL-8) Software & Hardware </strong></p>
         <div class="key-value">
           <p>
             <span> Personal Project </span>
-            <span> January 2023 - December 2024 </span>
+            <span> April 2025 - Present </span>
           </p>
         </div>
+	<p>
+	  Designed a custom computing ecosystem, including an
+	  <strong>Instruction Set Architecture</strong> (ISA),
+	  <strong>Assembler</strong>, <strong>Virtual Machine</strong> (VM),
+	  and a <strong>TCP</strong> machine state transmission networking
+	  protocol. The system enables distributed execution of custom machine
+	  code across a client-router-server architecture.
+	</p>
         <ul>
           <li>
-            Prototyped hardware and firmware with <strong>PlatformIO</strong>.
+		  The custom <strong>8-bit ISA</strong> is executed by a
+		  corresponding <strong>VM</strong> developed in
+		  <strong>Go</strong>, featuring 256-bytes of RAM.
           </li>
           <li>
-            Created a DSL that abstracted the
-            <strong>Adafruit GFX</strong> library to control an on-devide screen
-            in <strong>C++</strong>.
+		  The custom <strong>TCP</strong> networking protocol
+		  implemented in <strong>Go</strong>, enables distributed
+		  execution by transmitting machine state packets between
+		  client, router, and server.
           </li>
+          <li>
+		  The <strong>assembler</strong> translates human-readable
+		  assembly into the custom ISA's machine code using a
+		  <strong>LL(1) Tabular Parser</strong> dynamically generated
+		  applying <strong>Formal Language Theory</strong>.
+          </li>
+	  <li>
+		  Working towards implementing my custom <strong>8-bit</strong>
+		  Computer based on <strong>74HC</strong> chips.
+	  </li>
+	  <li>
+		  Designed and iterating on <strong>custom toolchain</strong> to
+		  edit my CPU's <strong>microcode</strong>.
+	  </li>
+	  <li>
+		  Implementing <strong>FPGA</strong> adaptaion to be implemented
+		  in <strong>Tiny Tapeout ASIC</strong> project.
+	  </li>
         </ul>
-        <p>
-          Unfortunately this project never made it onto the web and is on an old
-          SSD somewhere.
-        </p>
+
+        <a
+          href="https://github.com/breadleaf/tcp-vm"
+          class="open-new"
+          >GitHub Repository - TCP VM</a
+        >
       </div>
       <br />
 
       <div class="project">
-        <p><strong> Leaf Lang </strong></p>
-        <div class="key-value">
-          <p>
-            <span> Personal Project </span>
-            <span> August 2022 - January 2023 </span>
-          </p>
-        </div>
-        <ul>
-          <li>
-            An interpreted or transpiled procedural dynamically-typed
-            stack-based programming language written in <strong>Python</strong>.
-          </li>
-          <li>
-            Wrote a compiler in Leaf Lang to compile a miniature version of Leaf
-            Lang.
-          </li>
-        </ul>
-        <a href="https://gitlab.com/Breadleaf/leaf-lang" class="open-new">
-          GitLab Repository - Leaf Lang
-        </a>
+	      <p><strong> BreadPod (Muserve Hardware Companion) </strong></p>
+	      <div class="key-value">
+		      <p>
+			      <span> Personal Project </span>
+			      <span> September 2024 - Present </span>
+		      </p>
+	      </div>
+	      <ul>
+		      <li>
+			      <strong>ESP32</strong> based music player with touch control.
+		      </li>
+		      <li>
+			      Communicates with <strong>Muserve Server</strong> software project.
+		      </li>
+	      </ul>
+		<a
+		      href="https://github.com/Breadleaf/BreadPod"
+		      class="open-new"
+		      >GitHub Repository - BreadPod</a>
       </div>
       <br />
 
@@ -269,16 +410,49 @@
       <br />
 
       <accordion-container>
-        <div title="Test Project 1">
-          <p>Hello World</p>
+        <div title="Plummet Language">
+          <p>
+	    From January 2023 to December 2024 I led an
+	    <a href="https://www.acm.org/" class="open-new">ACM</a> & Personal
+	    Project with the goal of implementing a cross-platform language. I
+            created technical specification documents for the language and
+            package manager. I also implemented a toolchain to manage packages,
+	    as well as lex and parse programs using <strong>Golang</strong>.
+	  </p>
+          <a
+            href="https://github.com/ColoradoSchoolOfMines/plummet-language"
+            class="open-new"
+          >
+            GitHub Repository - Plummet Language
+          </a>
         </div>
 
-        <div title="Test Project 2">
-          <p>Hello World</p>
+        <div title="Keyboard OS">
+	  <p>
+	    From January 2023 to December 2024 I prototyped hardware and firmware
+	    with <strong>PlatformIO</strong>. Created a DSL that abstracted the
+            <strong>Adafruit GFX</strong> library to control an on-devide screen
+            in <strong>C++</strong>. Unfortunately this project never made it
+	    onto the web and is on an old SSD somewhere.
+	  </p>
+	  <p>
+	    The project was a keyboard with an integrated real-time linux operating
+	    system running a built-in display which could run applications. The
+	    firmware would be similar to popular keyboard firmware
+	    <strong>QMK</strong>.
+	  </p>
         </div>
 
-        <div title="Test Project 3">
-          <p>Hello World</p>
+        <div title="Leaf Lang">
+          <p>
+	    From August 2022 to January 2023 I wrote an interpreted or transpiled
+	    procedural dynamically-typed stack-based programming language written
+	    in <strong>Python</strong>. Additionally I wrote a compiler in
+	    Leaf Lang to compile a miniature version of Leaf Lang.
+	  </p>
+          <a href="https://gitlab.com/Breadleaf/leaf-lang" class="open-new">
+            GitLab Repository - Leaf Lang
+          </a>
         </div>
       </accordion-container>
       <br />
