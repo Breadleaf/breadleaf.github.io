@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	background: #f0f0f0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards-container {
+	transform: skew(20deg, 0deg);
+
+	max-width: 400px;
+	min-width: 400px;
+}
+
+.card {
+	background: linear-gradient(135deg, #89f7fe, #66a6ff);
+	border-radius: 16px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	perspective: 1000px;
+}
+
+.card p {
+	width: 100%;
+	min-width: 0;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+		</style>
+	</head>
+	<body>
+		<div class="cards-container">
+			<div class="card">
+			</div>
+			<div class="card">
+			</div>
+			<div class="card">
+			</div>
+			<div class="card">
+			</div>
+		</div>
+		<script>
+			document.querySelectorAll(".card").forEach(el => {
+				const p = document.createElement("p");
+				p.textContent = "my really long text ".repeat(20);
+				el.appendChild(p);
+			});
+		</script>
+	</body>
+</html>

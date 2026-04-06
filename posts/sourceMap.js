@@ -1,6 +1,12 @@
 export default function sourceMap() {
 	return [
 	[
+		'Wood Working Qualifications',
+		'April 06, 2026 12:43 MDT',
+		'A little about me as a wood worker.',
+		'posts/html/06-04-2026_12-43-35.html',
+	],
+	[
 		'My proudest achievement',
 		'July 02, 2025 15:42 MDT',
 		'A short essay about graduating college',
